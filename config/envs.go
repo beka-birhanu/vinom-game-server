@@ -10,7 +10,7 @@ import (
 
 // Config holds the application's configuration values.
 type Config struct {
-	HostIP   string // Host IP for the server
+	ProxyIP  string // Proxy IP of client server
 	GrpcPort int    // Port for the GRPC server
 
 	UdpPort                int // Port for the UDP socket
@@ -31,7 +31,7 @@ func initConfig() Config {
 
 	// Populate the Config struct with required environment variables
 	return Config{
-		HostIP:   mustGetEnv("HOST_IP"),
+		ProxyIP:  mustGetEnv("PROXY_IP"),
 		GrpcPort: mustGetEnvAsInt("GRPC_PORT"),
 
 		UdpPort:                mustGetEnvAsInt("UDP_PORT"),

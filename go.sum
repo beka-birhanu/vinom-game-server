@@ -1,7 +1,7 @@
 github.com/beka-birhanu/udp-socket-manager v1.0.0 h1:JAZEtWsvsIE+Yua/ron4UJHSU5jpkh6dib9TlXXzkFg=
 github.com/beka-birhanu/udp-socket-manager v1.0.0/go.mod h1:lJLpmPgNPu6KFVeNj4xP/YpaOk4tABvu+kwLy8pAURc=
-github.com/beka-birhanu/vinom-api v1.0.0 h1:zitkdPtaTnyovcH1fhlXHmes0K5GNVFQh7ljFghP9V8=
-github.com/beka-birhanu/vinom-api v1.0.0/go.mod h1:/YD3PahH3r/baltcZcHt8Sy5oeE9DsCrzr1ym40hKag=
+github.com/beka-birhanu/vinom-common v0.0.0-20250219120723-29393b8d60dc h1:83k4YYwUOFZhnF/IUosVGfY05U9bGezwbTyEK/3zEl0=
+github.com/beka-birhanu/vinom-common v0.0.0-20250219120723-29393b8d60dc/go.mod h1:5YQ9WWSIzfDCIeVls/RtHOZTIFrjhdAcxPQuvJQhjfE=
 github.com/beka-birhanu/vinom-game-encoder v0.0.0-20250208072810-17ca6136885b h1:6A5BYU6akzwFN6YwaKTvFHMEz5d68epgDaunVlhkKFQ=
 github.com/beka-birhanu/vinom-game-encoder v0.0.0-20250208072810-17ca6136885b/go.mod h1:AbZKYzqH2ww1cQ5dfroE5GU27LKm6tUb7quIO4rxFMI=
 github.com/beka-birhanu/vinom-interfaces v0.0.0-20250208062558-5610abbec85d h1:fvHHlVXEsO5auUzxHgyPJCKfBs7JScC91eWStBZPSnQ=

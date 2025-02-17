@@ -11,14 +11,14 @@ import (
 	"github.com/beka-birhanu/udp-socket-manager/crypto"
 	udppb "github.com/beka-birhanu/udp-socket-manager/encoding"
 	udpsocket "github.com/beka-birhanu/udp-socket-manager/socket"
-	logger "github.com/beka-birhanu/vinom-api/infrastruture/log"
+	general_i "github.com/beka-birhanu/vinom-common/interfaces/general"
+	socket_i "github.com/beka-birhanu/vinom-common/interfaces/socket"
+	logger "github.com/beka-birhanu/vinom-common/log"
 	gamepb "github.com/beka-birhanu/vinom-game-encoder"
 	"github.com/beka-birhanu/vinom-game-server/api"
 	"github.com/beka-birhanu/vinom-game-server/config"
 	"github.com/beka-birhanu/vinom-game-server/service"
 	"github.com/beka-birhanu/vinom-game-server/service/i"
-	general_i "github.com/beka-birhanu/vinom-interfaces/general"
-	socket_i "github.com/beka-birhanu/vinom-interfaces/socket"
 	maze "github.com/beka-birhanu/wilson-maze"
 	"google.golang.org/grpc"
 )
@@ -33,7 +33,7 @@ var (
 )
 
 func initUDPSocketManager() {
-	serverAddr, err := net.ResolveUDPAddr("udp", fmt.Sprintf("%s:%v", config.Envs.HostIP, config.Envs.UdpPort))
+	serverAddr, err := net.ResolveUDPAddr("udp", fmt.Sprintf("%s:%v", config.Envs.ProxyIP, config.Envs.UdpPort))
 	if err != nil {
 		appLogger.Error(fmt.Sprintf("Resolving server address: %v", err))
 		os.Exit(1)
@@ -121,7 +121,7 @@ func main() {
 	appLogger.Info("UDP Socket Manager started serving")
 
 	var err error
-	addr := fmt.Sprintf("%s:%v", config.Envs.HostIP, config.Envs.GrpcPort)
+	addr := fmt.Sprintf("%s:%v", config.Envs.ProxyIP, config.Envs.GrpcPort)
 	grpcConnListener, err = net.Listen("tcp", addr)
 	defer func() {
 		_ = grpcConnListener.Close()

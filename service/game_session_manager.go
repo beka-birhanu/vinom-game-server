@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
+	game_i "github.com/beka-birhanu/vinom-common/interfaces/game"
+	general_i "github.com/beka-birhanu/vinom-common/interfaces/general"
+	socket_i "github.com/beka-birhanu/vinom-common/interfaces/socket"
 	"github.com/beka-birhanu/vinom-game-server/service/i"
-	game_i "github.com/beka-birhanu/vinom-interfaces/game"
-	general_i "github.com/beka-birhanu/vinom-interfaces/general"
-	socket_i "github.com/beka-birhanu/vinom-interfaces/socket"
 	"github.com/google/uuid"
 )
 

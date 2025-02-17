@@ -1,0 +1,15 @@
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      target: dev-stage
+    container_name: vinom_session_manager
+    volumes:
+      - .:/app
+      - /app/tmp
+    environment:
+      PROXY_IP: ${PROXY_IP} 
+      UDP_PORT: ${UDP_PORT}
+      UDP_BUFFER_SIZE: ${UDP_BUFFER_SIZE}
+      GRPC_PORT: ${GRPC_PORT}
