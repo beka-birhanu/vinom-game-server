@@ -33,7 +33,7 @@ var (
 )
 
 func initUDPSocketManager() {
-	serverAddr, err := net.ResolveUDPAddr("udp", fmt.Sprintf("%s:%v", config.Envs.ProxyIP, config.Envs.UdpPort))
+	serverAddr, err := net.ResolveUDPAddr("udp", fmt.Sprintf("%s:%v", "vinom_session_manager", config.Envs.UdpPort))
 	if err != nil {
 		appLogger.Error(fmt.Sprintf("Resolving server address: %v", err))
 		os.Exit(1)

@@ -9,6 +9,7 @@ services:
       - .:/app
       - /app/tmp
     environment:
+      Host_IP: app
       PROXY_IP: ${PROXY_IP} 
       UDP_PORT: ${UDP_PORT}
       UDP_BUFFER_SIZE: ${UDP_BUFFER_SIZE}

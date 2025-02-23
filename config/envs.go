@@ -11,6 +11,7 @@ import (
 // Config holds the application's configuration values.
 type Config struct {
 	ProxyIP  string // Proxy IP of client server
+	HostIP   string // Host IP of server
 	GrpcPort int    // Port for the GRPC server
 
 	UdpPort                int // Port for the UDP socket
@@ -32,6 +33,7 @@ func initConfig() Config {
 	// Populate the Config struct with required environment variables
 	return Config{
 		ProxyIP:  mustGetEnv("PROXY_IP"),
+		HostIP:   mustGetEnv("Host_IP"),
 		GrpcPort: mustGetEnvAsInt("GRPC_PORT"),
 
 		UdpPort:                mustGetEnvAsInt("UDP_PORT"),
@@ -44,7 +46,7 @@ func initConfig() Config {
 func mustGetEnv(key string) string {
 	value, exists := os.LookupEnv(key)
 	if !exists {
-		log.Fatalf("[APP] [FATAL] Environment variable %s is not set", key)
+		log.Fatalf("%s[APP]%s %s[FATAL]%s Environment variable %s is not set", ColorGreen, ColorReset, ColorRed, ColorReset, key)
 	}
 	return value
 }

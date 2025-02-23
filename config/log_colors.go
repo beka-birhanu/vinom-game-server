@@ -6,5 +6,6 @@ const (
 	ColorBlue   = "\033[34m"
 	ColorCyan   = "\033[36m"
 	ColorGreen  = "\033[32m"
+	ColorRed    = "\033[31m"
 	ColorReset  = "\033[0m" // Reset to default
 )
