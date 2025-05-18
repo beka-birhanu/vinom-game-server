@@ -1,9 +1,7 @@
 github.com/beka-birhanu/udp-socket-manager v1.0.1 h1:3xoLZML5QEac6iDQR+o3CcE7utK3nHK5unJy//S/weM=
 github.com/beka-birhanu/udp-socket-manager v1.0.1/go.mod h1:qMbsq9xZeS/niC132NEhantwANBp7kCEa9M2e0Zh8/A=
-github.com/beka-birhanu/vinom-common v0.0.0-20250219134553-ff7a6a1e660c h1:09lDR4qUFoJrURD6G7oKgElGM+ypwByf0CT5DO2CSHo=
-github.com/beka-birhanu/vinom-common v0.0.0-20250219134553-ff7a6a1e660c/go.mod h1:SLFq81isFnBg92dvFgdDKZtcseOrOS9wgiwh8xGzejA=
-github.com/beka-birhanu/vinom-interfaces v0.0.0-20250208062558-5610abbec85d h1:fvHHlVXEsO5auUzxHgyPJCKfBs7JScC91eWStBZPSnQ=
-github.com/beka-birhanu/vinom-interfaces v0.0.0-20250208062558-5610abbec85d/go.mod h1:riTs7QpVdiowdD9mWGLAYmQ5v0rguVIBzEo993rSTrQ=
+github.com/beka-birhanu/vinom-common v0.0.1 h1:S/hOipRHPTKsed3djkw7psKl0fvorJ8hkaXmNledVI0=
+github.com/beka-birhanu/vinom-common v0.0.1/go.mod h1:VE7I/muiqO3Z7IYxE5FBjZCwLuQmv/BlCWdfPeWwDt0=
 github.com/beka-birhanu/wilson-maze v1.0.0 h1:PDW6uLL4Sv2E8Smh7nUWKALpcBpVqAA4IarsA4R2pJU=
 github.com/beka-birhanu/wilson-maze v1.0.0/go.mod h1:uvoDvkLdPtCK3aEb0wQj2dDbu9ImNQJptHto3GXrqEk=
 github.com/go-logr/logr v1.4.2 h1:6pFjapn8bFcIbiKo3XT4j/BhANplGihG6tvd+8rYgrY=
